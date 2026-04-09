@@ -11,7 +11,7 @@ class Hc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/deligoez/hc/releases/download/v0.1.0/hc_0.1.0_macOS_x86_64.tar.gz"
-      sha256 "74e066b78b63d6e301fd0f9f5009beb994cddd697c5464d7c8999f1b64140c74"
+      sha256 "14176225e8272570f02bff32e9d9562d16b83b10a237092936bcaf5ee3d8aaea"
 
       define_method(:install) do
         bin.install "hc"
@@ -19,7 +19,7 @@ class Hc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/deligoez/hc/releases/download/v0.1.0/hc_0.1.0_macOS_arm64.tar.gz"
-      sha256 "3f4ede40ece436a011a8f43e96ef16c543e47de3bef790ae0f18eabaa6635116"
+      sha256 "4e0835163f8da3b8867f1c0566153b8cc9f8d3c227fdd6d924a7680beca9b3c7"
 
       define_method(:install) do
         bin.install "hc"
@@ -30,14 +30,14 @@ class Hc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/deligoez/hc/releases/download/v0.1.0/hc_0.1.0_linux_x86_64.tar.gz"
-      sha256 "05a918462f223f45ef89efab5ffd8a966483c69561ef96a523102f7dbd6079b2"
+      sha256 "c11e979d1b4100065a4dc7505031470d1cff86e75907baadcdc613ee81538a63"
       define_method(:install) do
         bin.install "hc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/deligoez/hc/releases/download/v0.1.0/hc_0.1.0_linux_arm64.tar.gz"
-      sha256 "c6ea1b9193fb2bbf1c1fa315888f62335e287ca20ba4d243f340b9907bfc50ce"
+      sha256 "57d8d0e0df82ae150360db5f743d1f34d1b7fa8c0c5a2814f2115f573a1adb56"
       define_method(:install) do
         bin.install "hc"
       end
