@@ -5,21 +5,21 @@
 class Rp < Formula
   desc "Repo manager CLI — organize, sync, and bootstrap your Developer workspace"
   homepage "https://github.com/deligoez/rp"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/rp/releases/download/v0.6.0/rp_0.6.0_macOS_x86_64.tar.gz"
-      sha256 "a8ee4abae27a04fa3a799a0f233dc94f79ce5c910b899e6bf89ef8bccd4d2673"
+      url "https://github.com/deligoez/rp/releases/download/v0.7.0/rp_0.7.0_macOS_x86_64.tar.gz"
+      sha256 "d994aa2dc12c7525f50e1814e7f46a7cb1441631200b860d3ddea303573dcff3"
 
       define_method(:install) do
         bin.install "rp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/rp/releases/download/v0.6.0/rp_0.6.0_macOS_arm64.tar.gz"
-      sha256 "bca164ce534ecec69b9ec1c5b08ef9bd3b79fe9b14e84ae685bff42dc10fda3f"
+      url "https://github.com/deligoez/rp/releases/download/v0.7.0/rp_0.7.0_macOS_arm64.tar.gz"
+      sha256 "c7a6a974aa6c035e5c7804330ada280d8296db1e3622a6f195d6e43122e31099"
 
       define_method(:install) do
         bin.install "rp"
@@ -29,15 +29,15 @@ class Rp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/rp/releases/download/v0.6.0/rp_0.6.0_linux_x86_64.tar.gz"
-      sha256 "3acff44223baa11f1792805058d5203e20e81f57f319774a7cb3dcb3be538fdb"
+      url "https://github.com/deligoez/rp/releases/download/v0.7.0/rp_0.7.0_linux_x86_64.tar.gz"
+      sha256 "e9a1de591ae5c32440a32daf26f03fa49968f78fbc188db7ad4b6fa3d8683e41"
       define_method(:install) do
         bin.install "rp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/rp/releases/download/v0.6.0/rp_0.6.0_linux_arm64.tar.gz"
-      sha256 "6dfaf7551ef6671e8f836853f7b9eaff86827dc39e5c0ffeb5e08dc32c370fe6"
+      url "https://github.com/deligoez/rp/releases/download/v0.7.0/rp_0.7.0_linux_arm64.tar.gz"
+      sha256 "bd19806705c44c144a52e8234e283e8208af9906838259e47426bbec4f5e6687"
       define_method(:install) do
         bin.install "rp"
       end
