@@ -5,21 +5,21 @@
 class DeligoezHc < Formula
   desc "Hunk-based atomic git commits for AI agents"
   homepage "https://github.com/deligoez/hc"
-  version "0.10.0"
+  version "0.10.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/hc/releases/download/v0.10.0/hc_0.10.0_macOS_x86_64.tar.gz"
-      sha256 "b0a1a4755e709b81f45bdd40ac0831542517647e1cac0a9a3800b8ea516f49bc"
+      url "https://github.com/deligoez/hc/releases/download/v0.10.1/hc_0.10.1_macOS_x86_64.tar.gz"
+      sha256 "71d88ba29808219ff0524f28a438eb1d823af18a3d87061ccf16d69092892e6e"
 
       define_method(:install) do
         bin.install "hc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/hc/releases/download/v0.10.0/hc_0.10.0_macOS_arm64.tar.gz"
-      sha256 "38811a5578d07c0cb4c81a64b1178d5f25320392d1c21a8f86e63c5458ab13e0"
+      url "https://github.com/deligoez/hc/releases/download/v0.10.1/hc_0.10.1_macOS_arm64.tar.gz"
+      sha256 "66ccc589f65f4ebd8795fe7c8949a4012b49f15537d088b739a2c40953497b98"
 
       define_method(:install) do
         bin.install "hc"
@@ -29,15 +29,15 @@ class DeligoezHc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/hc/releases/download/v0.10.0/hc_0.10.0_linux_x86_64.tar.gz"
-      sha256 "98ca749ab1c1b8eb1253badd035a08121f2405768259e3d985711507e2690253"
+      url "https://github.com/deligoez/hc/releases/download/v0.10.1/hc_0.10.1_linux_x86_64.tar.gz"
+      sha256 "5ece40bb340987f90b0b43e85183d66b56896f906c2e2c043a021660857461fa"
       define_method(:install) do
         bin.install "hc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/hc/releases/download/v0.10.0/hc_0.10.0_linux_arm64.tar.gz"
-      sha256 "7ef43d1de59a25db9a4dc3f25f09ac599bfad12855b12fcb2bab8c94b9356294"
+      url "https://github.com/deligoez/hc/releases/download/v0.10.1/hc_0.10.1_linux_arm64.tar.gz"
+      sha256 "e7db89d9cc636177a474b4ce96200272bc72a831e572d7ab5a0e2cf8b2da65e8"
       define_method(:install) do
         bin.install "hc"
       end
