@@ -5,21 +5,21 @@
 class DeligoezRp < Formula
   desc "Repo manager CLI — organize, sync, and bootstrap your Developer workspace"
   homepage "https://github.com/deligoez/rp"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/rp/releases/download/v0.8.0/rp_0.8.0_macOS_x86_64.tar.gz"
-      sha256 "79b8a94258519d4dc1815ade20b6b33cfc01294fa546421b0ea2a956cdf49a94"
+      url "https://github.com/deligoez/rp/releases/download/v0.9.0/rp_0.9.0_macOS_x86_64.tar.gz"
+      sha256 "a0c2fda56abc41d6762339261d5f15c42dd22abc60e9c11d249a643325092c17"
 
       define_method(:install) do
         bin.install "rp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/rp/releases/download/v0.8.0/rp_0.8.0_macOS_arm64.tar.gz"
-      sha256 "4f6e4a3429e788da476490f4000d1b4c7c82055cf29a9f17ada832981de49e23"
+      url "https://github.com/deligoez/rp/releases/download/v0.9.0/rp_0.9.0_macOS_arm64.tar.gz"
+      sha256 "8dc186a1743bc2a8fc1c7c3b0f4231edd105ed7788f57acbf3e25e6a87e05f3e"
 
       define_method(:install) do
         bin.install "rp"
@@ -29,15 +29,15 @@ class DeligoezRp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/rp/releases/download/v0.8.0/rp_0.8.0_linux_x86_64.tar.gz"
-      sha256 "0a28aaa5ff499940888cf7d89ba1533226ed2218b93d60fe0dde0c2a6861f49a"
+      url "https://github.com/deligoez/rp/releases/download/v0.9.0/rp_0.9.0_linux_x86_64.tar.gz"
+      sha256 "971167eaab9e05f3b667d683c4a51f1da8f767fbcdfdf5f218982716d262f09c"
       define_method(:install) do
         bin.install "rp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/rp/releases/download/v0.8.0/rp_0.8.0_linux_arm64.tar.gz"
-      sha256 "faedd04e81ce349742f990fd2a751bd9d3832742cdeab2c29da3c39c3aad8b4d"
+      url "https://github.com/deligoez/rp/releases/download/v0.9.0/rp_0.9.0_linux_arm64.tar.gz"
+      sha256 "0aa44bfca2a43548fadba52589ae2a054087e6205eb4d3847b136ea85ec45901"
       define_method(:install) do
         bin.install "rp"
       end
