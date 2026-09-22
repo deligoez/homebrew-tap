@@ -5,21 +5,21 @@
 class Cr < Formula
   desc "Code review lifecycle manager for AI coding agents"
   homepage "https://github.com/deligoez/cr"
-  version "0.6.2"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/cr/releases/download/v0.6.2/cr_0.6.2_macOS_x86_64.tar.gz"
-      sha256 "e90f12121fdf5f2d2944a9082aafe3bfb44144ea23d53de0fc0dadb8abf3fb22"
+      url "https://github.com/deligoez/cr/releases/download/v0.7.0/cr_0.7.0_macOS_x86_64.tar.gz"
+      sha256 "492bb55e0599b07c22bacce0ed12d88041eeb23948b85258cdd1dded51567ae5"
 
       define_method(:install) do
         bin.install "cr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/cr/releases/download/v0.6.2/cr_0.6.2_macOS_arm64.tar.gz"
-      sha256 "6861f2489f381adf596ce511f72072505bde22991558ac141f3d2e47990a5749"
+      url "https://github.com/deligoez/cr/releases/download/v0.7.0/cr_0.7.0_macOS_arm64.tar.gz"
+      sha256 "c83805b99f8d1585d209721cc4c9e95163a3a545a5b0031ee94bc55ec9993d0a"
 
       define_method(:install) do
         bin.install "cr"
@@ -29,15 +29,15 @@ class Cr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/cr/releases/download/v0.6.2/cr_0.6.2_linux_x86_64.tar.gz"
-      sha256 "9017f064dc8a153199c1951cdc92b2bb088bb3542c4401b2133475ffced438b9"
+      url "https://github.com/deligoez/cr/releases/download/v0.7.0/cr_0.7.0_linux_x86_64.tar.gz"
+      sha256 "1e952660d51a8d73be9fcce9dcd6ebd71e47e973d96e9b332bf6c4a933049027"
       define_method(:install) do
         bin.install "cr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/cr/releases/download/v0.6.2/cr_0.6.2_linux_arm64.tar.gz"
-      sha256 "6607f76b3671fddb685e13a3cc0d08b412463b5c0985aa79f6fbdfb7104eba57"
+      url "https://github.com/deligoez/cr/releases/download/v0.7.0/cr_0.7.0_linux_arm64.tar.gz"
+      sha256 "c190d4fb68955ef5421a9ba3a33b30fcf14dd87ced6c5716d9905b16fa2447d3"
       define_method(:install) do
         bin.install "cr"
       end
