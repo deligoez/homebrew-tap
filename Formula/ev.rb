@@ -5,21 +5,21 @@
 class Ev < Formula
   desc "Agent-first home inventory"
   homepage "https://github.com/deligoez/ev"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/ev/releases/download/v0.1.1/ev_0.1.1_macOS_x86_64.tar.gz"
-      sha256 "72dfe2f93e518a5db4c05c118af80266a536a724f73cd43ca36107702f3cb03b"
+      url "https://github.com/deligoez/ev/releases/download/v0.2.0/ev_0.2.0_macOS_x86_64.tar.gz"
+      sha256 "f85416cdd1ece4b624caad917aeec51c6d63c4f2ff52df0ac078a0dce1232b60"
 
       define_method(:install) do
         bin.install "ev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/ev/releases/download/v0.1.1/ev_0.1.1_macOS_arm64.tar.gz"
-      sha256 "ebcd77ef6e59370665c11c0137cfc680ea413c4e4ac569f174ee51865d21a17b"
+      url "https://github.com/deligoez/ev/releases/download/v0.2.0/ev_0.2.0_macOS_arm64.tar.gz"
+      sha256 "2dde32f02f0df320abc6899375d442b005d4b18a80c0e600d8e1b4a759467ba3"
 
       define_method(:install) do
         bin.install "ev"
@@ -29,15 +29,15 @@ class Ev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/ev/releases/download/v0.1.1/ev_0.1.1_linux_x86_64.tar.gz"
-      sha256 "565f8cb133621aa6501455945ceb9caa044923cdeedee2866f6a97d6a5c35077"
+      url "https://github.com/deligoez/ev/releases/download/v0.2.0/ev_0.2.0_linux_x86_64.tar.gz"
+      sha256 "9d06fa9e20f60b827a78b0d622e18b2a0156b2a234088b6fa27c62b549c09251"
       define_method(:install) do
         bin.install "ev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/ev/releases/download/v0.1.1/ev_0.1.1_linux_arm64.tar.gz"
-      sha256 "eac777d4191b94b9921985de34dfd8929ad7324c01d2c521a389405e24f52418"
+      url "https://github.com/deligoez/ev/releases/download/v0.2.0/ev_0.2.0_linux_arm64.tar.gz"
+      sha256 "0250e44534f4831aecb7855fd04bf3807a1b466781d4290ffefc8e3b196544e8"
       define_method(:install) do
         bin.install "ev"
       end
