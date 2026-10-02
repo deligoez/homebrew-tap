@@ -1,25 +1,25 @@
 class Ev < Formula
   desc "Agent-first home inventory"
   homepage "https://github.com/deligoez/ev"
-  version "0.17.0"
+  version "0.18.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/ev/releases/download/v0.17.0/ev-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "6f40b3db74eba70dff4c5d7eed04dee3bba6975306af8948a955c10ee0216f94"
+      url "https://github.com/deligoez/ev/releases/download/v0.18.0/ev-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "420af9225d1d592bb349348671103c70afd19b9fa5888600ea67bb70ab10d69b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/ev/releases/download/v0.17.0/ev-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "446aab168c16fb77a37dfaab76fac0ab5f1e32ce27e4e1b0daddff63be20ae1e"
+      url "https://github.com/deligoez/ev/releases/download/v0.18.0/ev-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "8763d327397ff04062fb302355427a3c2dd82af8cb029705933e3ec465c16758"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/ev/releases/download/v0.17.0/ev-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "78132ae4125444023e45ccb012a51dcda09eaf20db5ed61fcd31402869a73e2a"
+      url "https://github.com/deligoez/ev/releases/download/v0.18.0/ev-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c63379898d9f829ff7a7c41fa7accdfff9f3c8a44472b3a4627d380cbc694b87"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/ev/releases/download/v0.17.0/ev-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e1711b26e95bdf51e7b68333a4caf2f1549652b25e55a1e154a4a2e885efe57d"
+      url "https://github.com/deligoez/ev/releases/download/v0.18.0/ev-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "92e20d79e23c65978b43d60376ee29978ec81010690c90f995fc5fe1b250de33"
     end
   end
   license "MIT"
