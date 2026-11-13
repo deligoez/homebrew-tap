@@ -5,21 +5,21 @@
 class Tp < Formula
   desc "Spec-to-task lifecycle manager for AI coding agents"
   homepage "https://github.com/deligoez/tp"
-  version "1.17.0"
+  version "1.17.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deligoez/tp/releases/download/v1.17.0/tp_1.17.0_macOS_x86_64.tar.gz"
-      sha256 "34071d050e24c0a1aee1c172f71945a263623967261fdcce4de2449f1adfcd3f"
+      url "https://github.com/deligoez/tp/releases/download/v1.17.1/tp_1.17.1_macOS_x86_64.tar.gz"
+      sha256 "a88ceec292b2b0da0fe75cf91f7e11b3929b825346ffb3779ec7ef958a7b0f44"
 
       define_method(:install) do
         bin.install "tp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deligoez/tp/releases/download/v1.17.0/tp_1.17.0_macOS_arm64.tar.gz"
-      sha256 "2b83c37d125d6f88ff337343ebf500a42c6085067d6f0b186ff870cc5f367d72"
+      url "https://github.com/deligoez/tp/releases/download/v1.17.1/tp_1.17.1_macOS_arm64.tar.gz"
+      sha256 "48bb4489c84b4442abf31ade114b6fc8bbf89ed56b9d5fabe5e443a0f5818ce0"
 
       define_method(:install) do
         bin.install "tp"
@@ -29,15 +29,15 @@ class Tp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/tp/releases/download/v1.17.0/tp_1.17.0_linux_x86_64.tar.gz"
-      sha256 "27aad28ddbedf77cbf6e6d59df633ca42db270e143a9fcbcbb95a81834dd7849"
+      url "https://github.com/deligoez/tp/releases/download/v1.17.1/tp_1.17.1_linux_x86_64.tar.gz"
+      sha256 "e489c2e2cd916c58350edab423331b1219e6bbde9335cd2975e22d625e0d57c3"
       define_method(:install) do
         bin.install "tp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deligoez/tp/releases/download/v1.17.0/tp_1.17.0_linux_arm64.tar.gz"
-      sha256 "c2f4760fd5194dfd86d4c2652d7c3d4493f02ee57b54493ed53e05a740a20b5b"
+      url "https://github.com/deligoez/tp/releases/download/v1.17.1/tp_1.17.1_linux_arm64.tar.gz"
+      sha256 "cadf959b8f4800594bca4bac6ca1ecfd783fd6556a9817ef286ee328eeac2a5c"
       define_method(:install) do
         bin.install "tp"
       end
